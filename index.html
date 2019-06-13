@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Кодировка -->
+        <meta charset="utf-8">
+
+        <!-- Настройка viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Подключаем Bootstrap CSS-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!--        Подключаем main CSS-->
+        <link rel="stylesheet" href="css/main.css">
+
+            <!-- Подключение JavaScript -->
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <title>home</title>
+    </head>
+    <body>
+<!--        Шапка-->
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <h1>Название предприятия</h1>
+            <p>Немного описания</p>
+        </div>
+<!--        Навигационная панель-->
+        <nav class="navbar navbar-expand-sm navbar-dark justify-content-start">
+            <!--Логотип-->
+            <div class="align-self">
+                <a class="navbar-brand" href="#" >Логотип</a>
+            </div>
+
+            <!-- Кнопка для сворачивания -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Ссылки на панели-->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="C:\Users\Alex\Desktop\HTML CSS\index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="C:\Users\Alex\Desktop\HTML CSS\about.html">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="gallery">Галлерея</a>
+                    </li>
+                 </ul>
+            </div>
+        </nav>
+
+        <!--Карусель-->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="C:\Users\Alex\Desktop\HTML CSS\images\cosmos11.jpg" alt="rocket">
+            </div>
+            <div class="carousel-item">
+              <img src="C:\Users\Alex\Desktop\HTML CSS\images\cosmos22.jpg" alt="satellite">
+            </div>
+            <div class="carousel-item">
+              <img src="C:\Users\Alex\Desktop\HTML CSS\images\cosmos33.jpg" alt="astronaut">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+
+
+
+
+        <div class="container-fluid" id="home">
+            <h1>Text <small>Small text</small></h1>
+            <h3>Text <mark>Mark text</mark></h3>
+            <h5 class="text-center">Text in center</h5>
+            <blockquote class="blockquote">
+                Цитата
+                <footer class="blockquote-footer">Автор</footer>
+            </blockquote>
+        </div>
+
+        <div class="table-responsive" id="info">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Age</th>
+              <th>City</th>
+              <th>Country</th>
+              <th>Sex</th>
+              <th>Example</th>
+              <th>Example</th>
+              <th>Example</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Anna</td>
+              <td>Pitt</td>
+              <td>35</td>
+              <td>New York</td>
+              <td>USA</td>
+              <td>Female</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+
+        <!-- класс контейнер по всей длине страницы
+            <div class="container-fluid">
+            <h1>Container title</h1>
+            <!-- Класс строка
+            <div class="row">
+                <!--Класс столбец (12 столбцов максимум), -md - адаптация под размер экрана (xs, sm, md,lg), 4-ширина стобца в столбцах
+                <div class="col-md-6" style="background-color: aqua">Left</div>
+                <div class="col-md-6" style="background-color: cadetblue">Right</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2" style="background-color: azure">1</div>
+                <div class="col-md-2" style="background-color: paleturquoise">2</div>
+                <div class="col-md-2" style="background-color: bisque">3</div>
+                <div class="col-md-2" style="background-color: beige">4</div>
+                <div class="col-md-2" style="background-color: cornsilk">5</div>
+                <div class="col-md-2" style="background-color: oldlace">6</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3" style="background-color: wheat">Left 1/2</div>
+                <div class="col-md-3" style="background-color: blue">Right 1/2</div>
+                <div class="col-md-2" style="background-color: rebeccapurple">Left 1/3</div>
+                <div class="col-md-2" style="background-color: tomato">Mid 1/3</div>
+                <div class="col-md-2" style="background-color: yellowgreen">Right 1/3</div>
+            </div>
+        </div>
+        -->
+
+    </body>
+</html>
